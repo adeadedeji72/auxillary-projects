@@ -126,3 +126,13 @@ Check with
 ls -l /home
 ~~~
 You should see a list of all the accounts and their corresponding /home directories
+Ensure the users have their authorized_users file have the key in them, check with
+~~~
+cat /home/(user account)/authorized_users
+~~~
+
+Log into the user account from another machine. Use the private key to login.
+Example
+~~~
+ssh -i "key-file" newuser@server-ip
+~~~
