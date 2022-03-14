@@ -109,3 +109,20 @@ To check the current users on the server, run
 ~~~
 ls -l /home
 ~~~
+
+Change directory to /usr/sbin
+~~~
+cd /usr/sbin
+~~~
+
+Run the script
+~~~
+sudo ./onboarding_users.sh
+~~~
+The script runs in the background and create all the accounts and necessary files
+
+Check with
+~~~
+ls -l /home
+~~~
+You should see a list of all the accounts and their corresponding /home directories
